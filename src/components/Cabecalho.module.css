@@ -1,5 +1,22 @@
-.topo-site {
+/* Evite nomear as classes usando hífen::afterExemplo: topo-site {}
+Isso, vai te obrigat a usar a classe através de sintaxe de array com colchetes.*/
+
+/* Prefira usar a sintaxe camelCase (ou snake_case: ,topo_site)  */
+.topoSite {
   background-color: blue;
   color: aqua;
   padding: 1rem;
+}
+
+.logo {
+  vertical-align: middle;
+  margin-right: 0.2rem;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
 }
