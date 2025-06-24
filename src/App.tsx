@@ -8,8 +8,6 @@ export default function App() {
     <>
       <Cabecalho />
 
-      <Menu />
-
       <Conteudo />
 
       <Rodape />
