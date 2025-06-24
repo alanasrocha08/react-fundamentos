@@ -2,7 +2,7 @@ import type { CSSProperties } from "react";
 
 const estilosRodape: CSSProperties = {
   backgroundColor: "#222",
-  color: "#fffff",
+  color: "white",
   textAlign: "center",
   padding: "1rem",
 };
@@ -13,10 +13,14 @@ export default function Rodape() {
       <footer style={estilosRodape}>
         <h2>Pequeno site criado com React</h2>
         <p style={{ color: "red", fontWeight: "bold" }}>
-          Desenvolvido por
-          <b>Alana</b> &copy; 2025
+          Desenvolvido por{" "}
+          <b>
+            <a href="">Alana </a>
+          </b>
+          &copy; 2025
         </p>
       </footer>
+      <hr />
       <p className="outro-texto">Qualquer coisa...</p>
       <hr />
     </>
