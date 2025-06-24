@@ -6,7 +6,7 @@ import estilos from "./Cabecalho.module.css";
 
 export default function Cabecalho() {
   return (
-    <header className={estilos["topo-site"]}>
+    <header className={estilos["topoSite"]}>
       <h1>
         <img src={logo} alt="" />
         Olá react!😊
