@@ -3,12 +3,11 @@ Isso, vai te obrigat a usar a classe através de sintaxe de array com colchetes.
 
 /* Prefira usar a sintaxe camelCase (ou snake_case: ,topo_site):  */
 .topoSite {
-  background-color: blue;
+  background-color: rgb(6, 6, 73);
   color: aqua;
   padding: 1rem;
 
   a {
-    color: orange;
     text-decoration: none;
   }
 

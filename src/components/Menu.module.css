@@ -1,0 +1,19 @@
+/* 1) Crie regras para formatar os os links do menu (nav)
+2) Importe e aplique os recursos do módulo no componente Menu*/
+.menu {
+  padding: 1rem;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+
+  a {
+    background-color: rgb(6, 6, 73);
+    color: aqua;
+    transition: color 0.5s;
+  }
+
+  a:hover {
+    background-color: aqua;
+    color: rgb(6, 6, 73);
+  }
+}
