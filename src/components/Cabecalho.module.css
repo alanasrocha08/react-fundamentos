@@ -1,11 +1,22 @@
 /* Evite nomear as classes usando hífen::afterExemplo: topo-site {}
 Isso, vai te obrigat a usar a classe através de sintaxe de array com colchetes.*/
 
-/* Prefira usar a sintaxe camelCase (ou snake_case: ,topo_site)  */
+/* Prefira usar a sintaxe camelCase (ou snake_case: ,topo_site):  */
 .topoSite {
   background-color: blue;
   color: aqua;
   padding: 1rem;
+
+  a {
+    color: orange;
+    text-decoration: none;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid;
+    margin: 0.4rem 0;
+  }
 }
 
 .logo {
@@ -20,3 +31,10 @@ Isso, vai te obrigat a usar a classe através de sintaxe de array com colchetes.
   gap: 0.5rem;
   font-size: 1.5rem;
 }
+
+/* Classe/Seletor Descendente: 
+Formata os links contido ns classe do header */
+/* .topoSite a {
+  text-decoration: none;
+  color: orange;
+} */
