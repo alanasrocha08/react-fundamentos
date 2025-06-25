@@ -1,5 +1,21 @@
 # Fundamentos de React
 
+## 07_tailwindcss
+
+Tailwind CSS é um framework CSS utilitário que permite criar interfaces modernas de forma rápida e eficiente, utilizando classes pré-definidas diretamente no HTML. Em vez de escrever CSS personalizado para cada componente, você compõe estilos aplicando múltiplas classes utilitárias, como espaçamento, cores, tipografia, layout e efeitos visuais
+
+- Utility-First: Oferece centenas de classes utilitárias para estilizar elementos sem sair do HTML, como bg-blue-500, p-4, flex, text-center, entre outras
+
+- Design Responsivo: Facilita a criação de layouts que funcionam em qualquer dispositivo, usando modificadores como md:, lg:, etc., para adaptar estilos conforme o tamanho da tela.
+
+- Altamente Personalizável: Permite personalizar temas, cores, espaçamentos e mais através do arquivo tailwind.config.js.
+
+- Rápida Prototipação: Acelera o desenvolvimento, já que não é necessário criar novas classes CSS para cada elemento.
+
+- Integração com Ferramentas: Compatível com extensões para editores de código, como o Tailwind CSS IntelliSense para VS Code, que sugere classes enquanto você digita.
+
+- Diretivas Especiais: Utiliza diretivas como @tailwind, @layer e @apply para organizar e compor estilos em arquivos CSS, facilitando a manutenção e reuso de estilos personalizados
+
 ## 06_styles-components
 
 Styled Components é uma biblioteca (lib) muito usada com projetos React que permite escrever estilos CSS dentro do JavaScript usando a própria sintaxe do CSS. Os estilos ficam acoplados ao componente em que foram declarados.
