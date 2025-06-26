@@ -1,14 +1,31 @@
+import type { ReactNode } from "react";
 import estilos from "./Artigo.module.css";
 
-export default function Artigo() {
+type ArtigoProps = {
+  titulo: string;
+  numero: number;
+  children: ReactNode;
+  data?: Date;
+};
+
+export default function Artigo({
+  titulo,
+  numero,
+  children,
+  data,
+}: ArtigoProps) {
   return (
     <article className={estilos.artigo}>
-      <h3>Artigo 1 de exemplo</h3>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius totam
-        dolores maiores ducimus mollitia eveniet dolore, quia temporibus sint
-        sequi!
-      </p>
+      <h3>
+        {" "}
+        Artigo {numero}: {titulo}{" "}
+      </h3>
+      {data && (
+        <p>
+          Data do registro: <time>{data?.toLocaleDateString()}</time>
+        </p>
+      )}
+      {children}
     </article>
   );
 }

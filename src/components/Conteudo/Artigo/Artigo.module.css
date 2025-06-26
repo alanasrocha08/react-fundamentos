@@ -1,7 +1,13 @@
 .artigo {
   margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: aliceblue;
+  border-bottom: 4px solid lightgrey;
+  border-radius: 8px;
 
   h3 {
     color: darkblue;
+    font-weight: bold;
+    font-size: 1.1rem;
   }
 }
