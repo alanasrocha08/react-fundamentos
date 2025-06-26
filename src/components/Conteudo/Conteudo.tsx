@@ -12,7 +12,7 @@ export default function Conteudo() {
         className={`${estilos.principal} ${estilos.arredondada} ${estilos.sombra}`}
       >
         <Saudacao nome="Alana" classe="bg-emerald-100" />
-        <Saudacao nome="Julia" classe="bg-blue-100" />
+        <Saudacao classe="bg-blue-100" />
 
         <p>Esse é um exemplo de aplicação React.</p>
 
