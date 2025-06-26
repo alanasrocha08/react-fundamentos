@@ -11,9 +11,9 @@ export default function Conteudo() {
       <section
         className={`${estilos.principal} ${estilos.arredondada} ${estilos.sombra}`}
       >
-        <Saudacao />
+        <Saudacao nome="Alana" />
 
-        <p>Esre é um exemplo de aplicação React.</p>
+        <p>Esse é um exemplo de aplicação React.</p>
 
         <Artigo />
 
