@@ -4,6 +4,7 @@ import estilos from "./Conteudo.module.css";
 import DicaDoDia from "./DicaDoDia/DicaDoDia";
 import Saudacao from "./saudacao";
 import cursos from "../../Data/cursos";
+import ListaCursos from "../ListaCursos/ListaCursos";
 
 export default function Conteudo() {
   return (
@@ -17,12 +18,7 @@ export default function Conteudo() {
         <p>Esse é um exemplo de aplicação React.</p>
 
         {/* Faça a lógica necessária para apresentar o componente Artigo e passar para ele os dados de cada curso proveniente de cursos. */}
-
-        <div className={estilos.artigos}>
-          {cursos.map((curso) => {
-            return <Artigo dados={curso} key={curso.id} />;
-          })}
-        </div>
+        <ListaCursos />
       </section>
 
       <DicaDoDia />
