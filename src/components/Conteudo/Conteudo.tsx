@@ -7,9 +7,11 @@ import cursos from "../../Data/cursos";
 import ListaCursos from "../ListaCursos/ListaCursos";
 
 export default function Conteudo() {
+  const categorias = [...new Set(cursos.map((curso) => curso.categoria))];
+  console.log(categorias);
+
   return (
     <main className={estilos.conteudo}>
-      {/* Para combinar classes, use temple string (aspas ``) */}
       <section
         className={`${estilos.principal} ${estilos.arredondada} ${estilos.sombra}`}
       >
@@ -17,7 +19,6 @@ export default function Conteudo() {
 
         <p>Esse é um exemplo de aplicação React.</p>
 
-        {/* Faça a lógica necessária para apresentar o componente Artigo e passar para ele os dados de cada curso proveniente de cursos. */}
         <ListaCursos />
       </section>
 
