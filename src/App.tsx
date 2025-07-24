@@ -5,6 +5,7 @@ import Home from "./components/pages/Home";
 import Sobre from "./components/pages/Sobre";
 import Contato from "./components/pages/Contato";
 import Container from "./components/Container/Container";
+import Pagina404 from "./components/pages/Pagina404";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="*" element={<Pagina404 />} />
         </Routes>
       </Container>
 
