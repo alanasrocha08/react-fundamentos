@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import Cabecalho from "./components/Cabecalho/Cabecalho";
-import Conteudo from "./components/Conteudo/Conteudo";
 import Rodape from "./components/Rodape/Rodape";
 import Home from "./components/pages/Home";
 import Sobre from "./components/pages/Sobre";
