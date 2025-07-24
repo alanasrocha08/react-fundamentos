@@ -1,4 +1,3 @@
-import Artigo from "./Artigo/artigo";
 import AvisoImportante from "./AvisoImportante/AvisoImportante";
 import estilos from "./Conteudo.module.css";
 import DicaDoDia from "./DicaDoDia/DicaDoDia";
@@ -13,19 +12,20 @@ export default function Conteudo() {
   const categorias = [...new Set(cursos.map((curso) => curso.categoria))];
 
   return (
-    <main className={estilos.conteudo}>
+    <>
       <section
         className={`${estilos.principal} ${estilos.arredondada} ${estilos.sombra}`}
       >
-        <Saudacao nome="Alana" classe="bg-emerald-100" />
+        <h2 className="font-bold text-lg">Fundamentos de React!</h2>
+        <Saudacao nome="Tiago" classe="bg-emerald-100" />
 
-        <p>Esse é um exemplo de aplicação React.</p>
+        <p>Este é um exemplo de aplicação React.</p>
 
         {categorias.map((categoria) => {
           return (
             <button
               onClick={() => setCategoriaAtiva(categoria)}
-              className="rounded py-1 px-2 mr-1 bg-blue-500 hover:bg-red-500"
+              className="rounded py-1 px-2 mr-1 my-1 bg-amber-200 hover:bg-green-300"
             >
               {categoria}
             </button>
@@ -36,21 +36,22 @@ export default function Conteudo() {
           <>
             <button
               onClick={() => setCategoriaAtiva(null)}
-              className="p-2 border rounded bg-red-400"
+              className="px-2 py-1 rounded bg-red-300"
             >
-              Limpar{" "}
+              Limpar
             </button>
             <p>
-              Categoria seleceionada: <b>{categoriaAtiva}</b>
+              Categoria selecionada: <b>{categoriaAtiva}</b>
             </p>
           </>
         )}
+
         <ListaCursos categoria={categoriaAtiva} />
       </section>
 
       <DicaDoDia />
 
       <AvisoImportante />
-    </main>
+    </>
   );
 }
