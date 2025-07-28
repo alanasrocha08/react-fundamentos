@@ -4,12 +4,19 @@ import DicaDoDia from "./DicaDoDia/DicaDoDia";
 import Saudacao from "./saudacao";
 import cursos from "../../Data/cursos";
 import ListaCursos from "../ListaCursos/ListaCursos";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Conteudo() {
   const [categoriaAtiva, setCategoriaAtiva] = useState<null | string>(null);
 
   const categorias = [...new Set(cursos.map((curso) => curso.categoria))];
+
+  /* Trocando o title da página conforme a categoria escolhida */
+  useEffect(() => {
+    document.title = categoriaAtiva
+      ? categoriaAtiva + " | Meu App React"
+      : "Meu App React";
+  }, [categoriaAtiva]);
 
   return (
     <>
@@ -19,9 +26,10 @@ export default function Conteudo() {
 
         <p>Este é um exemplo de aplicação React.</p>
 
-        {categorias.map((categoria) => {
+        {categorias.map((categoria, index) => {
           return (
             <button
+              key={index}
               onClick={() => setCategoriaAtiva(categoria)}
               className="rounded py-1 px-2 mr-1 my-1 bg-amber-200 hover:bg-green-300"
             >

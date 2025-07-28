@@ -1,15 +1,18 @@
+import { useEffect } from "react";
+
 export default function Sobre() {
+  useEffect(() => {
+    document.title = "Sobre | Meu App React";
+  }, []);
   return (
     <section>
-      <h2>Fale conosco</h2>
-      <p>Use o formulário e etc e tal</p>
-      <form action="" method="post">
-        <p>
-          <label htmlFor="email">E-mail</label>
-          <input type="email" name="email" id="email" />
-        </p>
-        <button type="submit">Enviar</button>
-      </form>
+      <h2>Sobre nossa empresa</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum veniam
+        earum cumque aspernatur, consequatur aliquam libero iste perspiciatis
+        ducimus nemo dicta, quisquam adipisci perferendis accusantium?
+        Asperiores autem dolorum fugiat corrupti.
+      </p>
     </section>
   );
 }
